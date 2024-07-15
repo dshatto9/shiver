@@ -20,7 +20,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="md:flex md:h-[90px] w-full fixed z-10 bg-black">
+    <header className="md:flex md:h-[90px] w-full z-10 bg-black">
       <nav className="md:flex w-full justify-between">
         <div className="md:flex items-center">
           <a href="/">

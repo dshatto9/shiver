@@ -4,6 +4,7 @@ import axios from "axios";
 import MovieList from "../components/MovieList";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import BackToTop from "../components/BackToTop";
 
 const API_KEY = "71a73b4c1194c61093da0533d7ea563c";
 const HORROR_ID = 27;
@@ -64,6 +65,7 @@ const Home = () => {
           </Link>
         </button>
       </motion.div>
+      <BackToTop />
     </div>
   );
 };

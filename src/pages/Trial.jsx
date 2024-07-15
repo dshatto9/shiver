@@ -3,13 +3,13 @@ import { motion } from "framer-motion";
 const Trial = () => {
   return (
     <motion.div
-      initial={{ opacity: 0, y: -50 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: -50 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
       transition={{ ease: "easeInOut", duration: 1.0 }}
       className="bg-[url('./assets/collage.jpg')]"
     >
-      <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed bg-[rgba(0,0,0,0.5)]">
+      <div className="absolute bottom-0 left-0 right-0 top-[64px] lg:top-[90px] h-full w-full overflow-hidden bg-fixed z-0 bg-[rgba(0,0,0,0.5)]">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
@@ -25,7 +25,13 @@ const Trial = () => {
           </p>
         </motion.div>
       </div>
-      <div className="flex items-center justify-center container mx-auto h-screen">
+      <motion.div
+        initial={{ opacity: 0, x: -50 }}
+        animate={{ opacity: 1, x: 0 }}
+        exit={{ opacity: 0, x: -50 }}
+        transition={{ ease: "easeInOut", duration: 1.0 }}
+        className="flex items-center justify-center container mx-auto h-screen"
+      >
         <form action="" className="flex flex-col gap-8 md:w-[25%] z-[1]">
           <input
             type="text"
@@ -45,7 +51,7 @@ const Trial = () => {
             className="bg-[#FF4343] rounded-lg p-2.5 text-white font-body cursor-pointer"
           />
         </form>
-      </div>
+      </motion.div>
     </motion.div>
   );
 };

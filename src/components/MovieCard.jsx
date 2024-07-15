@@ -27,7 +27,7 @@ const MovieCard = ({ movie }) => {
     : "https://via.placeholder.com/500";
 
   return (
-    <div className="md:relative  md:max-w-sm rounded overflow-hidden hover:scale-105">
+    <div className="md:relative  md:max-w-sm rounded overflow-hidden md:hover:scale-105">
       <Link to={`/trailer/${movie.id}`}>
         <img className="w-full" src={imageUrl} alt={movie.title} />
       </Link>

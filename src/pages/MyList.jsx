@@ -16,7 +16,7 @@ const MyList = () => {
       className="bg-black"
     >
       <h1 className="flex justify-center items-center text-3xl md:text-6xl font-bold p-4 md:mb-8 font-body text-white">
-        My List
+        Favorites
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 container mx-auto p-2 mt-12">
         {favorites.map((item) =>

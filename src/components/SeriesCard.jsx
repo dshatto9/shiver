@@ -27,7 +27,7 @@ const SeriesCard = ({ series }) => {
     : "https://via.placeholder.com/300";
 
   return (
-    <div className="md:relative md:max-w-sm rounded overflow-hidden hover:scale-105">
+    <div className="md:relative md:max-w-sm rounded overflow-hidden md:hover:scale-105">
       <Link to={`/trailer/${series.id}`}>
         <img className="w-full" src={imageUrl} alt={series.title} />
       </Link>

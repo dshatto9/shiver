@@ -1,6 +1,7 @@
 import axios from "axios";
 import SeriesList from "../components/SeriesList";
 import { useEffect, useState } from "react";
+import BackToTop from "../components/BackToTop";
 
 const API_KEY = "71a73b4c1194c61093da0533d7ea563c";
 const HORROR_ID = 27;
@@ -28,6 +29,7 @@ const Series = () => {
         Only on Shiver
       </h1>
       <SeriesList series={series} />
+      <BackToTop />
     </div>
   );
 };
